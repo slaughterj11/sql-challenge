@@ -1,6 +1,15 @@
 'use strict';
 
 
+
+angular.module('myApp.directives', []).
+  directive('appVersion', ['version', function(version) {
+    return function(scope, elm, attrs) {
+      elm.text(version);
+    };
+  }]);
+
+
 function DeletePostCtrl($scope, $http, $location, $routeParams) {
   $http.get('/api/post/' + $routeParams.id).
     success(function(data) {
