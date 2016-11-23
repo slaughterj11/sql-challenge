@@ -1,0 +1,8 @@
+div.posts(ng-repeat='post in posts')
+  h2 {{post.title}}
+  ul.posts
+    a(href='/readPost/{{post.id}}') View
+    a(href='/editPost/{{post.id}}') Edit
+    a(href='/deletePost/{{post.id}}') Delete
+
+  div.postText{{post.text}}
