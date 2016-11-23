@@ -1,0 +1,8 @@
+div.posts
+  h3 {{post.title}}
+  ul
+    a
+      button(ng-click='deletePost()') Delete
+    a
+      button(ng-click='home()') Cancel
+  div.postText {{post.text}}
