@@ -1,0 +1,8 @@
+div.editPost
+  h3 Edit existing post
+  input(ng-model='form.title', name='title', placeholder="Title")
+  br
+  br
+  textarea(ng-model='form.text', cols='50', rows='15', placeholder="Body")
+  br
+  button(ng-click='editPost()') Edit Post
